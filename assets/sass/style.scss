@@ -1,0 +1,34 @@
+//
+//	FONTS
+// ------------------------------------------------------
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@500&display=swap");
+
+//
+//	IMPORTS
+// ------------------------------------------------------
+
+//
+//	DEFAULT
+// ------------------------------------------------------
+@import "import/normalize";
+@import "import/mixins";
+@import "import/variables";
+@import "import/general";
+
+//
+//	LAYOUT
+// ------------------------------------------------------
+@import "import/layout/nav";
+@import "import/layout/header";
+@import "import/layout/about";
+@import "import/layout/services";
+@import "import/layout/skills";
+@import "import/layout/work";
+@import "import/layout/contact";
+@import "import/layout/footer";
+
+//
+//	DEBUG
+// ------------------------------------------------------
+@import "import/debug";

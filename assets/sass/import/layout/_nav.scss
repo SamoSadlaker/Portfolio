@@ -1,0 +1,64 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: $nav-height;
+
+    padding: 0.5em 0.8em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav-logo {
+        color: $color-text-light;
+        letter-spacing: 0.08em;
+        font: {
+            size: 1.4em;
+            weight: 600;
+        }
+        span {
+            color: $color-primary;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        list-style: none;
+
+        .nav-item {
+            margin: {
+                left: 0.5em;
+                right: 0.5em;
+            }
+        }
+
+        .nav-link {
+            color: $color-text-light;
+            font: {
+                size: 1.1em;
+                weight: 500;
+            }
+            transition: color $animation-speed;
+
+            &:hover {
+                color: $color-text-dark;
+            }
+        }
+    }
+    transition: all 0.4s ease;
+}
+
+.active {
+    background-color: $color-primary;
+    height: em(60);
+}
+.active > .nav-logo span {
+    color: $color-text-light;
+}

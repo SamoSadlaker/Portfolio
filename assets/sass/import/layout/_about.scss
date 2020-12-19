@@ -1,0 +1,24 @@
+#About .about-container {
+    width: 100%;
+    padding: 0 4em;
+
+    display: flex;
+    flex-direction: row;
+
+    .image img {
+        width: 60em;
+        height: auto;
+        @include rounded(em(20));
+        object-fit: cover;
+    }
+    .content {
+        max-width: 60%;
+        padding: {
+            left: 4em;
+        }
+
+        font: {
+            size: 1.1em;
+        }
+    }
+}
