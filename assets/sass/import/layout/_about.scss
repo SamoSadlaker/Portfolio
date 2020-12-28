@@ -8,7 +8,7 @@
     .image img {
         width: 60em;
         height: auto;
-        @include rounded(em(20));
+        @include rounded(em(10));
         object-fit: cover;
     }
     .content {

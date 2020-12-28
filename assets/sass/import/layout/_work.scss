@@ -19,7 +19,7 @@
 
             box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.356);
 
-            @include rounded(em(15));
+            @include rounded(em(10));
 
             transform-style: preserve-3d;
 
@@ -35,7 +35,7 @@
                 object-fit: cover;
 
                 position: absolute;
-                @include rounded(em(15));
+                @include rounded(em(10));
 
                 filter: blur(2px);
             }

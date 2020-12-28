@@ -85,9 +85,7 @@
             <h4>Frontend development</h4>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
           </div>
-          <svg viewBox="0 0 355 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 35.9813L9.7625 33.9252C19.8208 31.8692 39.3458 27.757 59.1667 21.5888C78.9875 15.4206 98.5125 7.19626 118.333 3.08411C138.154 -1.02804 157.679 -1.02804 177.5 3.08411C197.321 7.19626 216.846 15.4206 236.667 19.5327C256.487 23.6449 276.012 23.6449 295.833 21.5888C315.654 19.5327 335.179 15.4206 345.237 13.3645L355 11.3084V110H345.237C335.179 110 315.654 110 295.833 110C276.012 110 256.487 110 236.667 110C216.846 110 197.321 110 177.5 110C157.679 110 138.154 110 118.333 110C98.5125 110 78.9875 110 59.1667 110C39.3458 110 19.8208 110 9.7625 110H0V35.9813Z" fill="#0099FF"/>
-          </svg>
+          <img src="assets/img/wave.svg" alt="" class="wave">
         </div>
         <div class="card">
           <div class="content">
@@ -95,9 +93,7 @@
             <h4>Spigot Plugins</h4>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
           </div>
-          <svg viewBox="0 0 355 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 35.9813L9.7625 33.9252C19.8208 31.8692 39.3458 27.757 59.1667 21.5888C78.9875 15.4206 98.5125 7.19626 118.333 3.08411C138.154 -1.02804 157.679 -1.02804 177.5 3.08411C197.321 7.19626 216.846 15.4206 236.667 19.5327C256.487 23.6449 276.012 23.6449 295.833 21.5888C315.654 19.5327 335.179 15.4206 345.237 13.3645L355 11.3084V110H345.237C335.179 110 315.654 110 295.833 110C276.012 110 256.487 110 236.667 110C216.846 110 197.321 110 177.5 110C157.679 110 138.154 110 118.333 110C98.5125 110 78.9875 110 59.1667 110C39.3458 110 19.8208 110 9.7625 110H0V35.9813Z" fill="#0099FF"/>
-          </svg>
+          <img src="assets/img/wave.svg" alt="" class="wave">
         </div>
         <div class="card">
           <div class="content">
@@ -105,9 +101,7 @@
             <h4>Backend development</h4>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
           </div>
-          <svg viewBox="0 0 355 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 35.9813L9.7625 33.9252C19.8208 31.8692 39.3458 27.757 59.1667 21.5888C78.9875 15.4206 98.5125 7.19626 118.333 3.08411C138.154 -1.02804 157.679 -1.02804 177.5 3.08411C197.321 7.19626 216.846 15.4206 236.667 19.5327C256.487 23.6449 276.012 23.6449 295.833 21.5888C315.654 19.5327 335.179 15.4206 345.237 13.3645L355 11.3084V110H345.237C335.179 110 315.654 110 295.833 110C276.012 110 256.487 110 236.667 110C216.846 110 197.321 110 177.5 110C157.679 110 138.154 110 118.333 110C98.5125 110 78.9875 110 59.1667 110C39.3458 110 19.8208 110 9.7625 110H0V35.9813Z" fill="#0099FF"/>
-          </svg>
+          <img src="assets/img/wave.svg" alt="" class="wave">
         </div>
       </div>
     </section>
@@ -240,6 +234,8 @@
   <footer class="footer">
     <ul class="social">
       <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-discord"></i></a></li>
       <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
     </ul>
     <p>&copy; Copyright SamoSadlaker <?= Date('Y') ?>. | Všetky práva vyhradené.</p>
