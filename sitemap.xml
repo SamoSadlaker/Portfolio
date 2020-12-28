@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>https://samosadlaker.eu/</loc>
+    <lastmod>2020-12-28T19:13:37+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://samosadlaker.eu/assets/certificates/webrebel-1-html-css-javascript.pdf</loc>
+    <lastmod>2020-12-28T18:25:50+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://samosadlaker.eu/assets/certificates/webrebel-2-php.pdf</loc>
+    <lastmod>2020-12-28T18:25:50+00:00</lastmod>
+    <priority>0.50</priority>
+    </url>
+  <url>
+    <loc>https://samosadlaker.eu/assets/certificates/css-preprocesory-sass.pdf</loc>
+    <lastmod>2020-12-28T18:25:50+00:00</lastmod>
+    <priority>0.50</priority>
+    </url>
+  <url>
+    <loc>https://samosadlaker.eu/assets/certificates/git-a-github-zaklady.pdf</loc>
+    <lastmod>2020-12-28T18:25:50+00:00</lastmod>
+    <priority>0.50</priority>
+  </url>
+</urlset>
