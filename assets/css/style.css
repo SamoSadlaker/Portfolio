@@ -786,11 +786,11 @@ section {
 
 #Work {
   width: 100%;
-  padding: 0 4em;
 }
 
 #Work .work-container {
   width: 100%;
+  padding: 0 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,25 +809,12 @@ section {
 }
 
 #Work .work-container .card {
-  width: 30em;
-  height: 18em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.356);
-          box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.356);
-  border-radius: 0.625em;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-#Work .work-container .card:hover .front {
-  -webkit-transform: translateZ(20px);
-          transform: translateZ(20px);
+  position: relative;
+  width: 20em;
+  height: 15em;
+  -webkit-box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 #Work .work-container .card img {
@@ -835,19 +822,29 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  border-radius: 0.625em;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
-#Work .work-container .card .front {
-  position: relative;
+#Work .work-container .card:hover .content {
+  bottom: 0;
+}
+
+#Work .work-container .card:hover .content span {
+  opacity: 1;
+}
+
+#Work .work-container .card:hover .content ul a,
+#Work .work-container .card:hover .content i {
+  opacity: 1;
+}
+
+#Work .work-container .card .content {
   width: 100%;
-  height: 100%;
+  height: 7.5em;
+  position: absolute;
   left: 0;
-  right: 0;
-  padding: 2em 1em;
+  bottom: -100%;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,34 +852,73 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0.5em;
+  -webkit-transition: bottom 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 
-#Work .work-container .card .front h4 {
+#Work .work-container .card .content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.01em;
+  background-color: white;
+}
+
+#Work .work-container .card .content span {
   color: #008bf8;
-  margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
-#Work .work-container .card .front p {
-  color: #e4e4e4;
+#Work .work-container .card .content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-#Work .work-container .card .front .links a {
+#Work .work-container .card .content ul a,
+#Work .work-container .card .content ul i {
   color: #f1f1f1;
-  margin: 0 1em;
+  font-size: 1.3em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
 }
 
-#Work .work-container .card .front .links a:hover {
-  color: #008bf8;
+#Work .work-container .card .content ul a:hover,
+#Work .work-container .card .content ul i:hover {
+  color: rgba(0, 0, 0, 0.15);
 }
 
 #Contact .contact-container {

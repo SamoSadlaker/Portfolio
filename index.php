@@ -170,17 +170,14 @@
         <span>completed projects</span>
       </div>
       <div class="work-container">
-        <div class="card" id="workcard">
-          <div class="back">
-            <img src="/assets/img/test.png" alt="">
-          </div>
-          <div class="front">
-            <h4>MMP</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam accusantium expedita cumque blanditiis, asperiores corporis impedit. Quis nisi blanditiis dicta dolore veritatis, officiis quaerat voluptas optio, repellat tempora praesentium.</p>
-            <div class="links">
-              <a href="#">Info</a>
-              <a href="#">Website</a>
-            </div>
+        <div class="card">
+          <img src="assets/img/test1.png" alt="">
+          <div class="content">
+            <span>ForGamers</span>
+            <ul>
+              <li><a href=""><i class="fas fa-info-circle"></i></a></li>
+              <li><a href=""><i class="fas fa-external-link-square-alt"></i></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -243,7 +240,6 @@
 
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/tilt.jquery.js"></script>
   <script src="assets/js/typed.min.js"></script>
   <script src="assets/js/sweetalert.min.js"></script>
   <script src="assets/js/scripts.js"></script>

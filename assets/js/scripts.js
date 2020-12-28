@@ -40,17 +40,6 @@ $(document).ready(function () {
         }
     });
 
-    /* Tilit */
-    $("#workcard").tilt({
-        glare: true,
-        maxGlare: 0.1,
-        scale: 1.02,
-        speed: 1000,
-        transition: true,
-        perspective: 1000,
-        maxTilt: 10,
-    });
-
     /* Contact Form */
 
     var form = $("#contactform");

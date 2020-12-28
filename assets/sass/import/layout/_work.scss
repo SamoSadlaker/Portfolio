@@ -1,9 +1,8 @@
 #Work {
     width: 100%;
-    padding: 0 4em;
-
     .work-container {
         width: 100%;
+        padding: 0 4em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -11,68 +10,93 @@
         flex-wrap: wrap;
 
         .card {
-            width: 30em;
-            height: 18em;
-
-            display: flex;
-            flex-direction: column;
-
-            box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.356);
-
-            @include rounded(em(10));
-
-            transform-style: preserve-3d;
-
-            &:hover {
-                .front {
-                    transform: translateZ(20px);
-                }
-            }
+            position: relative;
+            width: 20em;
+            height: 15em;
+            box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-
-                position: absolute;
-                @include rounded(em(10));
-
-                filter: blur(2px);
             }
 
-            .front {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                right: 0;
-                padding: 2em 1em;
+            &:hover {
+                .content {
+                    bottom: 0;
 
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-end;
-
-                h4 {
-                    color: $color-primary;
-                    margin: 0;
-
-                    font: {
-                        size: 2em;
-                        weight: 600;
+                    span {
+                        opacity: 1;
+                    }
+                    ul a,
+                    i {
+                        opacity: 1;
                     }
                 }
-                p {
-                    color: darken($color-text-light, 5);
+            }
+
+            .content {
+                width: 100%;
+                height: 7.5em;
+                position: absolute;
+                left: 0;
+                bottom: -100%;
+
+                backdrop-filter: blur(8px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1em 0.5em;
+
+                transition: bottom 0.3s ease-in-out;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 0.01em;
+                    background-color: white;
                 }
 
-                .links {
-                    a {
+                span {
+                    color: $color-primary;
+                    font: {
+                        size: 1.5em;
+                        weight: 600;
+                    }
+                    line-height: 1.2em;
+                    letter-spacing: 0.05em;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                    transition-delay: 0.3s;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    width: 50%;
+                    height: 100%;
+                    align-items: flex-end;
+                    justify-content: space-around;
+
+                    a,
+                    i {
                         color: $color-text-light;
-                        margin: 0 1em;
+                        font-size: 1.3em;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
+                        transition-delay: 0.4s;
+
                         transition: color $animation-speed;
+
                         &:hover {
-                            color: $color-primary;
+                            color: rgba(0, 0, 0, 0.15);
                         }
                     }
                 }
