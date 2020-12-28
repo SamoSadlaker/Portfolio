@@ -175,12 +175,38 @@
           <div class="content">
             <span>ForGamers</span>
             <ul>
-              <li><a href=""><i class="fas fa-info-circle"></i></a></li>
-              <li><a href=""><i class="fas fa-external-link-square-alt"></i></i></a></li>
+              <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+              <li><a href="#"><i class="fas fa-external-link-square-alt"></i></i></a></li>
             </ul>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="Certificates">
+      <div class="titles">
+        <h3>Certificates</h3>
+        <span>completed courses</span>
+      </div>
+      <div class="certificates-container">
+        <div class="item">
+          <a href="assets/certificates/webrebel-1-html-css-javascript.pdf" target="_blank"><img src="assets/img/webrebel_icon.png" alt=""></a>
+        </div>  
+        <div class="item">
+          <a href="assets/certificates/webrebel-2-php.pdf" target="_blank"><img src="assets/img/php_icon.png" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="assets/certificates/css-preprocesory-sass.pdf" target="_blank"><img src="assets/img/sass_icon.png" alt=""></a>
+        </div>
+        <div class="item">      
+          <a href="assets/certificates/git-a-github-zaklady.pdf" target="_blank"><img src="assets/img/git_icon.png" alt=""></a>
+        </div>
+      </div>
+      <div class="foot">
+          <span>&#10084; Thanks to everyone who helped me improve in what I love</span>
+          <a href="https://www.learn2code.sk/" target="_blank">Leanr2Code</a>
+          <a href="https://www.devcalypso.cz/" target="_blank">Calypso</a>
+        </div>
     </section>
 
 
