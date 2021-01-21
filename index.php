@@ -227,7 +227,7 @@
           <span>&#10084; Thanks to everyone who helped me improve in what I love</span>
           <a href="https://www.learn2code.sk/" target="_blank">Leanr2Code</a>
           <a href="https://www.devcalypso.cz/" target="_blank">Calypso</a>
-        </div>
+      </div>
     </section>
 
 
@@ -237,8 +237,6 @@
         <span>contact me</span>
       </div>
       <div class="contact-container">
-        <div class="contact-form">
-          <h4>Send me message</h4>
           <form action="app/contact.php" id="contactform" method="POST">
             <div class="fields">
               <input type="text" name="name" id="name" required placeholder="Name">
@@ -253,24 +251,6 @@
             <button type="submit" name="submit">Send message!</button>
           </form>
         </div>
-
-        <div class="contact-info">
-          <h4>Info</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Delectus ratione neque excepturi nobis expedita temporibus sed,
-            aut vitae eveniet, eius ipsa hic eaque quo dolorum fuga nemo autem aperiam quasi?
-          </p>
-          <ul>
-            <li>
-              <p><i class="fas fa-user"></i>Name:</p>
-            </li>
-            <li>
-              <p><i class="fas fa-envelope"></i>Email:</p>
-            </li>
-          </ul>
-        </div>
-      </div>
     </section>
 
   </main>

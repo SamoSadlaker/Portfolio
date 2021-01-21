@@ -16,17 +16,17 @@ html {
 
 // ScrollBar
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: lighten($color-text-light, 5);
+    background: #2f2f2f;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #151515;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #181818;
 }
 
 body {
