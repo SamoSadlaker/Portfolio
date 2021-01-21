@@ -20,5 +20,35 @@
         font: {
             size: 1.1em;
         }
+
+        text-align: justify;
+    }
+}
+
+@media (max-width: 900px) {
+    #About .about-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            padding: 0;
+            max-width: 99%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    #About .about-container {
+        padding: 0 1em;
+    }
+}
+@media (max-width: 500px) {
+    #About .about-container .content {
+        font-size: 1em;
+    }
+}
+@media (max-width: 450px) {
+    #About .about-container .content {
+        font-size: 0.8em;
     }
 }

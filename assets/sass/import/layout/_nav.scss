@@ -62,3 +62,17 @@
 .active > .nav-logo span {
     color: $color-text-light;
 }
+@media (max-width: 700px) {
+    .navbar {
+        padding: 0.2em 0.5em;
+
+        .nav-list .nav-item {
+            margin: 0 0.3em;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .navbar .nav-list {
+        display: none;
+    }
+}

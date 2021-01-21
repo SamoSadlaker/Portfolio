@@ -15,7 +15,7 @@
         .item {
             width: 13em;
             height: auto;
-            margin: 0 0.4em;
+            margin: 0.4em 0.4em;
 
             a,
             img {
@@ -44,5 +44,17 @@
                 margin: 0.2em;
             }
         }
+    }
+}
+@media (max-width: 650px) {
+    #Certificates .foot {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    #Certificates .certificates-container {
+        padding: 0 1em;
     }
 }

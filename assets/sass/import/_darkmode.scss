@@ -4,6 +4,10 @@
         color: darken($color-text-light, 5);
     }
 
+    #About .about-container .content p {
+        color: darken($color-text-light, 10);
+    }
+
     #Services .services-container .card {
         background-color: #181818;
 

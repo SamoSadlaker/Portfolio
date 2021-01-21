@@ -74,3 +74,13 @@
         width: 0;
     }
 }
+@media (max-width: 650px) {
+    #Skills .skill-container .bar {
+        width: em(300);
+    }
+}
+@media (max-width: 600px) {
+    #Skills .skill-container {
+        padding: 0 1em;
+    }
+}

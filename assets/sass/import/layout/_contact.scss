@@ -75,3 +75,13 @@
         }
     }
 }
+@media (max-width: 700px) {
+    #Contact .contact-container .form {
+        width: 98%;
+    }
+}
+@media (max-width: 600px) {
+    #Contact .contact-container {
+        padding: 0 1em;
+    }
+}
