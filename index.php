@@ -242,7 +242,7 @@
     </section>
 
 
-    <!-- <section id="Contact">
+    <section id="Contact">
       <div class="titles">
         <h3>Contact</h3>
         <span>contact me</span>
@@ -262,7 +262,7 @@
             <button type="submit" name="submit">Send message!</button>
           </form>
         </div>
-    </section> -->
+    </section>
 
   </main>
 

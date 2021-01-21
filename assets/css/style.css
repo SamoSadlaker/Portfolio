@@ -1151,6 +1151,10 @@ section {
   border-radius: 0.5em;
 }
 
+#Contact .contact-container form .fields {
+  width: 100%;
+}
+
 #Contact .contact-container form .fields input {
   width: 15em;
   padding: 0.2em 0.5em;
@@ -1203,8 +1207,32 @@ section {
 }
 
 @media (max-width: 700px) {
-  #Contact .contact-container .form {
+  #Contact .contact-container form {
     width: 98%;
+  }
+  #Contact .contact-container form .fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #Contact .contact-container form .fields input {
+    width: 90%;
+    margin: 1.5em 0.2em;
+  }
+  #Contact .contact-container form input,
+  #Contact .contact-container form textarea {
+    width: 90%;
+    margin: 1.5em 0.2em;
   }
 }
 
