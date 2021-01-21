@@ -1,0 +1,21 @@
+[data-theme="dark"] {
+    background-color: #151515;
+    .titles h3 {
+        color: darken($color-text-light, 5);
+    }
+
+    #Services .services-container .card {
+        background-color: #181818;
+
+        .content p {
+            color: darken($color-text-light, 10);
+        }
+    }
+
+    #Contact .contact-container form {
+        input,
+        textarea {
+            color: darken($color-text-light, 10);
+        }
+    }
+}

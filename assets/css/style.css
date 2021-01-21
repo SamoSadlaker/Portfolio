@@ -700,7 +700,7 @@ section {
 }
 
 #Skills {
-  background-color: #181818;
+  background-color: #151515;
 }
 
 #Skills h3 {
@@ -923,7 +923,7 @@ section {
 }
 
 #Certificates {
-  background-color: #181818;
+  background-color: #151515;
 }
 
 #Certificates h3 {
@@ -1126,5 +1126,26 @@ section {
 
 .footer ul li a {
   color: #f1f1f1;
+}
+
+[data-theme="dark"] {
+  background-color: #151515;
+}
+
+[data-theme="dark"] .titles h3 {
+  color: #e4e4e4;
+}
+
+[data-theme="dark"] #Services .services-container .card {
+  background-color: #181818;
+}
+
+[data-theme="dark"] #Services .services-container .card .content p {
+  color: #d8d8d8;
+}
+
+[data-theme="dark"] #Contact .contact-container form input,
+[data-theme="dark"] #Contact .contact-container form textarea {
+  color: #d8d8d8;
 }
 /*# sourceMappingURL=style.css.map */
