@@ -1,6 +1,5 @@
 #Work {
     width: 100%;
-    padding-inline: 4em;
     .work-container {
         width: 100%;
         padding: 0 4em;
@@ -106,7 +105,11 @@
     }
 }
 @media (max-width: 600px) {
-    #Work {
-        padding: 0 1em;
+    #Work .work-container {
+        padding: {
+            top: $nav-height;
+            left: 1em;
+            right: 1em;
+        }
     }
 }

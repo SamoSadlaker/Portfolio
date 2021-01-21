@@ -81,6 +81,10 @@
 }
 @media (max-width: 600px) {
     #Skills .skill-container {
-        padding: 0 1em;
+        padding: {
+            top: $nav-height;
+            left: 1em;
+            right: 1em;
+        }
     }
 }

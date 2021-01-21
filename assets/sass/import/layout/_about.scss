@@ -39,7 +39,11 @@
 }
 @media (max-width: 600px) {
     #About .about-container {
-        padding: 0 1em;
+        padding: {
+            top: $nav-height;
+            left: 1em;
+            right: 1em;
+        }
     }
 }
 @media (max-width: 500px) {

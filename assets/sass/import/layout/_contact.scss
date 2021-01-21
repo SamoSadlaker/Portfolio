@@ -99,6 +99,10 @@
 }
 @media (max-width: 600px) {
     #Contact .contact-container {
-        padding: 0 1em;
+        padding: {
+            top: $nav-height;
+            left: 1em;
+            right: 1em;
+        }
     }
 }

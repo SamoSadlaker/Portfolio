@@ -672,7 +672,9 @@ section {
 
 @media (max-width: 600px) {
   #About .about-container {
-    padding: 0 1em;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -754,6 +756,7 @@ section {
 
 #Services .services-container .card .content h4 {
   color: #008bf8;
+  text-align: center;
   font-size: 1.5em;
   margin: 0.5em;
 }
@@ -775,7 +778,22 @@ section {
 
 @media (max-width: 600px) {
   #Services .services-container {
-    padding: 0 1em;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 420px) {
+  #Services .services-container .card {
+    width: 100%;
+    height: 23em;
+  }
+  #Services .services-container .card .content {
+    height: 80%;
+  }
+  #Services .services-container .card .content p {
+    font-size: 1em;
   }
 }
 
@@ -872,13 +890,14 @@ section {
 
 @media (max-width: 600px) {
   #Skills .skill-container {
-    padding: 0 1em;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
 #Work {
   width: 100%;
-  padding-inline: 4em;
 }
 
 #Work .work-container {
@@ -1015,8 +1034,10 @@ section {
 }
 
 @media (max-width: 600px) {
-  #Work {
-    padding: 0 1em;
+  #Work .work-container {
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -1110,7 +1131,9 @@ section {
 
 @media (max-width: 600px) {
   #Certificates .certificates-container {
-    padding: 0 1em;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -1238,7 +1261,9 @@ section {
 
 @media (max-width: 600px) {
   #Contact .contact-container {
-    padding: 0 1em;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -1305,8 +1330,8 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer p {
-    margin-bottom: 0.1em;
+  .footer ul {
+    margin-top: 0.3em;
   }
 }
 

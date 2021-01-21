@@ -39,6 +39,7 @@
             }
             h4 {
                 color: $color-primary;
+                text-align: center;
                 font: {
                     size: 1.5em;
                 }
@@ -63,6 +64,22 @@
 }
 @media (max-width: 600px) {
     #Services .services-container {
-        padding: 0 1em;
+        padding: {
+            top: $nav-height;
+            left: 1em;
+            right: 1em;
+        }
+    }
+}
+@media (max-width: 420px) {
+    #Services .services-container .card {
+        width: 100%;
+        height: 23em;
+        .content {
+            height: 80%;
+            p {
+                font-size: 1em;
+            }
+        }
     }
 }
