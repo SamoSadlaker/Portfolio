@@ -48,8 +48,20 @@
             transition: color $animation-speed;
 
             &:hover {
-                color: $color-text-dark;
+                color: rgba(255, 255, 255, 0.418);
             }
+        }
+    }
+    #theme {
+        background-color: transparent;
+        color: $color-text-light;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.2em 0.4em;
+
+        i {
+            font-size: 1.2em;
         }
     }
     transition: all 0.4s ease;

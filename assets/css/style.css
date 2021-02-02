@@ -511,7 +511,20 @@ section {
 }
 
 .navbar .nav-list .nav-link:hover {
-  color: #111;
+  color: rgba(255, 255, 255, 0.418);
+}
+
+.navbar #theme {
+  background-color: transparent;
+  color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+}
+
+.navbar #theme i {
+  font-size: 1.2em;
 }
 
 .active {
@@ -1176,6 +1189,19 @@ section {
 
 #Contact .contact-container form .fields {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #Contact .contact-container form .fields input {
@@ -1234,16 +1260,10 @@ section {
     width: 98%;
   }
   #Contact .contact-container form .fields {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

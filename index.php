@@ -1,3 +1,11 @@
+<?php
+  $theme = "light";
+
+  if (isset($_COOKIE['theme'])) {
+      $theme = $_COOKIE['theme'];
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="sk">
 
@@ -48,7 +56,7 @@
 
 </head>
 
-<body>
+<body data-theme="<?= $theme ?>">
 
   <!-- Navbar -->
   <nav class="navbar">
@@ -61,6 +69,7 @@
       <li class="nav-item"><a href="#Work" class="nav-link">My work</a></li>
       <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
     </ul>
+    <button id="theme"><i class="far fa-moon"></i></button>
   </nav>
 
   <!-- Header -->

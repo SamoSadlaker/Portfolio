@@ -40,38 +40,34 @@ $(document).ready(function () {
         }
     });
 
-    /* Contact Form */
+    var request;
+    var theme;
 
-    var form = $("#contactform");
-    form.on("submit", function (event) {
-        event.preventDefault();
-
-        $.ajax({
-            url: form.attr("action"),
+    if ($("body").attr("data-theme") == "light") {
+        theme = "dark";
+    }
+    if ($("body").attr("data-theme") == "dark") {
+        theme = "light";
+    }
+    // console.log(theme);
+    /* Dark theme */
+    $("#theme").click(function () {
+        request = $.ajax({
+            url: "/app/dark.php",
             type: "POST",
-            data: form.serialize(),
-            dataType: "json",
-        }).done(function (data) {
-            console.log(data);
+            data: "theme=" + theme,
         });
 
-        // req.done(function (response) {
-        //     if (response == "success") {
-        //         swal(
-        //             "Úspešne odoslané",
-        //             "Ďakujem že si ma kontaktoval, čoskoro sa ti ozvem.",
-        //             "success"
-        //         );
-        //         console.log("Succes");
-        //     }
-        //     if (response == "error") {
-        //         swal(
-        //             "Error, niekde je chyba",
-        //             "Niekde je chyba skús to znova prosím",
-        //             "error"
-        //         );
-        //         console.log("Error");
-        //     }
-        // });
+        request.done(function (response) {
+            $("body").attr("data-theme", response).css("transition", "0.6s");
+            if ($("body").attr("data-theme") == "light") {
+                theme = "dark";
+            }
+            if ($("body").attr("data-theme") == "dark") {
+                theme = "light";
+            }
+
+            console.log(response);
+        });
     });
 });
