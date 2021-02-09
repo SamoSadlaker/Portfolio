@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    /* Typed */
-    var typed = new Typed("#me", {
-        strings: ["WebDeveloper.", "Student.", "Gamer."],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-    });
-
     /* Formfix */
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
@@ -49,6 +41,7 @@ $(document).ready(function () {
     if ($("body").attr("data-theme") == "dark") {
         theme = "light";
     }
+    console.log("TEST");
     // console.log(theme);
     /* Dark theme */
     $("#theme").click(function () {

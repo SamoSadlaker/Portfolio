@@ -61,8 +61,10 @@
                 height: 0.15em;
                 left: 0;
                 top: 1.2em;
-                background-color: $color-primary;
+                background-color: darken($color-primary, 10);
                 animation: line 0.4s;
+
+                @include box-shadow;
             }
         }
     }
@@ -87,6 +89,10 @@
 }
 .active > .nav-logo span {
     color: $color-text-light;
+}
+
+.active > .nav .nav-list .nav-item .nav-link:hover::after {
+    background-color: $color-text-light;
 }
 @keyframes line {
     0% {
