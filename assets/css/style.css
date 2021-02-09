@@ -539,7 +539,7 @@ section {
 }
 
 .navbar #theme i {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .active {
@@ -649,6 +649,10 @@ section {
 
 .mobile-nav .mobile-list .mobile-item .mobile-link {
   color: #f1f1f1;
+}
+
+.mobile-nav .mobile-list .mobile-item .mobile-link i {
+  font-size: 1.5em;
 }
 
 @media (max-width: 700px) {
@@ -1486,6 +1490,10 @@ section {
 
 .footer ul li a {
   color: #f1f1f1;
+}
+
+.footer ul li a i {
+  font-size: 1.3em;
 }
 
 @media (max-width: 700px) {

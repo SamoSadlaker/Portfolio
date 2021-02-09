@@ -22,7 +22,7 @@
       <li class="nav-item"><a href="#" class="nav-link">Order</a></li>
       <li class="nav-item"><a href="/#Contact" class="nav-link">Contact</a></li>
     </ul>
-    <button id="theme"><i class="far fa-moon"></i></button>
+    <button id="theme"><i class='bx bx-moon' ></i></button>
   </nav>
 
   <header class="header-order">

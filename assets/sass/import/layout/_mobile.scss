@@ -40,6 +40,9 @@
 
             .mobile-link {
                 color: $color-text-light;
+                i {
+                    font-size: 1.5em;
+                }
             }
         }
     }

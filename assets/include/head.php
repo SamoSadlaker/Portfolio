@@ -36,8 +36,8 @@
   <!-- Page Title -->
   <title>SamoSadlaker's Portfolio</title>
 
-  <!-- Import FontAwesome Icons -->
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <!-- Import Boxicons  -->
+  <link rel="stylesheet" href="assets/css/boxicons.min.css">
 
   <!-- Import Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.min.css">
