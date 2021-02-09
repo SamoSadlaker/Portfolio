@@ -13,6 +13,8 @@
     align-items: center;
     justify-content: space-around;
 
+    @include box-shadow;
+
     .nav-logo {
         color: $color-text-light;
         letter-spacing: 0.08em;
@@ -47,8 +49,20 @@
             }
             transition: color $animation-speed;
 
-            &:hover {
-                color: rgba(255, 255, 255, 0.418);
+            position: relative;
+
+            // &:hover {
+            //     color: rgba(255, 255, 255, 0.418);
+            // }
+            &:hover::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.15em;
+                left: 0;
+                top: 1.2em;
+                background-color: $color-primary;
+                animation: line 0.4s;
             }
         }
     }
@@ -74,6 +88,14 @@
 .active > .nav-logo span {
     color: $color-text-light;
 }
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 @media (max-width: 700px) {
     .navbar {
         padding: 0.2em 0.5em;
@@ -82,8 +104,6 @@
             margin: 0 0.3em;
         }
     }
-}
-@media (max-width: 600px) {
     .navbar .nav-list {
         display: none;
     }

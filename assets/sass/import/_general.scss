@@ -79,6 +79,8 @@ img {
             size: 2.5em;
             weight: 600;
         }
+
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     }
 
     span {
@@ -87,6 +89,7 @@ img {
             size: 1.4em;
             weight: 500;
         }
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 
         &::before {
             content: "« ";

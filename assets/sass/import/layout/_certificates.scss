@@ -1,7 +1,8 @@
 #Certificates {
-    background-color: #151515;
+    background-color: #131313;
     h3 {
         color: $color-text-light;
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     }
     .certificates-container {
         width: 100%;
@@ -22,6 +23,7 @@
                 width: 100%;
                 height: 100%;
             }
+            @include box-shadow(0 4px 8px 0px rgba(0, 0, 0, 0.089));
         }
     }
     .foot {
@@ -33,11 +35,12 @@
         justify-content: center;
         padding: 0.5em 1em;
         span {
-            color: darken($color-text-light, 40);
+            color: darken($color-text-light, 50);
             margin: 0.5em;
+            opacity: 0.6;
         }
         a {
-            color: darken($color-text-light, 50);
+            color: darken($color-text-light, 60);
 
             &::after {
                 content: "|";

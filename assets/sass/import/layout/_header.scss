@@ -58,6 +58,8 @@
 
             @include rounded(em(8));
 
+            @include box-shadow;
+
             font: {
                 size: 1.3em;
                 weight: 500;

@@ -21,6 +21,8 @@
         align-items: center;
         @include rounded(em(8));
 
+        @include box-shadow(0 4px 6px 0px rgba(0, 0, 0, 0.096));
+
         .fields {
             width: 100%;
             display: flex;
@@ -77,6 +79,8 @@
             &:hover {
                 background-color: transparent;
             }
+
+            @include box-shadow(0 2px 3px 0px rgba(0, 0, 0, 0.25));
         }
     }
 }

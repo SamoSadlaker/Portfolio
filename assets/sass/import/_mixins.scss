@@ -3,14 +3,23 @@
 // ------------------------------------------------------
 
 @function em($size, $context: 16) {
-  @return ($size / $context) + em;
+    @return ($size / $context) + em;
 }
 
 @mixin rounded($radius: em(6)) {
-  @if ($enable-rounded) {
-      border-radius: $radius;
-  }
+    @if ($enable-rounded) {
+        border-radius: $radius;
+    }
 }
 
+@mixin box-shadow($shadow: $box-shadow) {
+    @if ($enable-shadow) {
+        box-shadow: $shadow;
+    }
+}
 
-
+@mixin text-shadow($shadow: $text-shadow) {
+    @if ($enable-shadow) {
+        text-shadow: $shadow;
+    }
+}

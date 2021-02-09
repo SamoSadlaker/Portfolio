@@ -212,15 +212,7 @@
       </div>
       <div class="work-container">
         <div class="card">
-          <img src="assets/img/test1.png" alt="">
-          <div class="content">
-            <span>ForGamers</span>
-            <ul>
-              <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
-              <li><a href="#"><i class="fas fa-external-link-square-alt"></i></i></a></li>
-            </ul>
-          </div>
-        </div>
+          
       </div>
     </section>
 
@@ -244,7 +236,7 @@
         </div>
       </div>
       <div class="foot">
-          <span>&#10084; Thanks to everyone who helped me improve in what I love</span>
+          <span>&#10084; Thanks to everyone who helped me improve my programing skills</span>
           <a href="https://www.learn2code.sk/" target="_blank">Leanr2Code</a>
           <a href="https://www.devcalypso.cz/" target="_blank">Calypso</a>
       </div>
@@ -274,6 +266,10 @@
     </section>
 
   </main>
+  
+
+  <!-- <a href="//www.dmca.com/Protection/Status.aspx?ID=d54945af-57dd-41c2-b786-7ca5b1085b1d" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-11.png?ID=d54945af-57dd-41c2-b786-7ca5b1085b1d"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> -->
+                                
 
   <footer class="footer">
     <ul class="social">
@@ -285,10 +281,20 @@
     <p>&copy; Copyright SamoSadlaker <?= Date('Y') ?>. | Všetky práva vyhradené.</p>
   </footer>
 
+  <nav aria-label="MobileNav" class="mobile-nav">
+    <ul class="mobile-list">
+      <li class="mobile-item"><a href="#Home" class="mobile-link"><i class="fas fa-home fa-lg"></i></a></li>
+      <li class="mobile-item"><a href="#About" class="mobile-link"><i class="fas fa-user fa-lg"></i></a></li>
+      <li class="mobile-item"><a href="#Services" class="mobile-link"><i class="fas fa-folder fa-lg"></i></a></li>
+      <li class="mobile-item"><a href="#Work" class="mobile-link"><i class="far fa-building fa-lg"></i></a></li>
+      <li class="mobile-item"><a href="#Contact" class="mobile-link"><i class="fas fa-phone-alt fa-lg"></i></a></li>
+    </ul>
+  </nav>
+
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/typed.min.js"></script>
-  <script src="assets/js/sweetalert.min.js"></script>
+
   <script src="assets/js/scripts.js"></script>
 
 </body>

@@ -10,6 +10,7 @@
         height: auto;
         @include rounded(em(10));
         object-fit: cover;
+        @include box-shadow;
     }
     .content {
         max-width: 60%;
