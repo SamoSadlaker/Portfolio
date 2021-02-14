@@ -1,4 +1,5 @@
-<footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <ul class="social">
       <li><a href="https://www.instagram.com/samosadlaker" target="_blank"><i class="bx bxl-instagram"></i></a></li>
       <li><a href="https://twitter.com/SamoSadlaker" target="_blank"><i class="bx bxl-twitter" ></i></a></li>
@@ -8,6 +9,7 @@
     <p>&copy; Copyright SamoSadlaker <?= Date("Y") ?>. | Všetky práva vyhradené.</p>
   </footer>
 
+  <!-- Mobile navigation -->
   <nav aria-label="MobileNav" class="mobile-nav">
     <ul class="mobile-list">
       <li class="mobile-item"><a href="#Home" class="mobile-link"><i class="bx bxs-home" ></i></a></li>
@@ -18,8 +20,11 @@
     </ul>
   </nav>
 
-
+  <!-- Import Jquery -->
   <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+  <!-- Import Typed library -->
   <script src="assets/js/typed.min.js"></script>
 
+  <!-- Import custom script -->
   <script src="assets/js/scripts.js"></script>

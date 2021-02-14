@@ -1,4 +1,29 @@
 $(document).ready(function () {
+    /* Functions */
+
+    function popalert(type, message) {
+        var icon = "info";
+
+        if (type == "success") {
+            icon = "check";
+        }
+        if (type == "error") {
+            icon = "error";
+        }
+
+        var alert = `<div id="alert" class="alert-${type}"><i class='bx bxs-${icon}-circle'></i>${message}</div>`;
+
+        $("main").append(alert);
+
+        setTimeout(() => {
+            $("#alert").fadeOut(400, function () {
+                $(this).remove();
+            });
+        }, 8000);
+    }
+
+    popalert("default", "Info message");
+
     /* Formfix */
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
@@ -41,8 +66,7 @@ $(document).ready(function () {
     if ($("body").attr("data-theme") == "dark") {
         theme = "light";
     }
-    console.log("TEST");
-    // console.log(theme);
+
     /* Dark theme */
     $("#theme").click(function () {
         request = $.ajax({
@@ -59,8 +83,39 @@ $(document).ready(function () {
             if ($("body").attr("data-theme") == "dark") {
                 theme = "light";
             }
+        });
+    });
 
-            console.log(response);
+    /* Contact Form */
+    var form = $("#contactform");
+    var error = $("#error");
+    form.submit(function (e) {
+        e.preventDefault();
+
+        request = $.ajax({
+            url: form.attr("action"),
+            type: "POST",
+            data: form.serialize(),
+        });
+
+        request.done(function (response) {
+            var res = JSON.parse(response);
+
+            if (res.status == "validate") {
+                error.text("* " + res.message);
+            }
+
+            if (res.status == "error") {
+                $("input[type=text], input[type=email], textarea ").val("");
+                error.text("");
+                popalert("error", res.message);
+            }
+
+            if (res.status == "success") {
+                $("input[type=text], input[type=email], textarea ").val("");
+                error.text("");
+                popalert("success", res.message);
+            }
         });
     });
 });

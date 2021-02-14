@@ -1,5 +1,5 @@
 <!-- Basic Meta Tags -->
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="title" content="SamoSadlaker's Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My name is SamoSadlaker, I am a web developer. This is my portfolio where you can find information about me and my projects.">

@@ -23,6 +23,12 @@
 
         @include box-shadow(0 4px 6px 0px rgba(0, 0, 0, 0.096));
 
+        .error {
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+
         .fields {
             width: 100%;
             display: flex;

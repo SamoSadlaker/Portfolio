@@ -343,6 +343,72 @@ template {
   display: none;
 }
 
+.alert-default, .alert-error, .alert-success {
+  position: fixed;
+  padding: 0.8em 1em;
+  border-radius: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 2em;
+  right: 0.8em;
+  min-width: 5em;
+  min-height: 2em;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25);
+  color: #f1f1f1;
+  -webkit-animation: alert 0.8s ease-in-out;
+          animation: alert 0.8s ease-in-out;
+}
+
+.alert-default i, .alert-error i, .alert-success i {
+  -webkit-animation: fadeIn ease 1s;
+          animation: fadeIn ease 1s;
+  margin-right: 0.2em;
+  font-size: 1.4em;
+}
+
+.alert-default {
+  background-color: #545766;
+}
+
+@media (max-width: 700px) {
+  .alert-default {
+    bottom: 5em;
+    padding: 0.8em;
+  }
+}
+
+.alert-error {
+  background-color: #fd685b;
+}
+
+@media (max-width: 700px) {
+  .alert-error {
+    bottom: 5em;
+    padding: 0.8em;
+  }
+}
+
+.alert-success {
+  background-color: #28a745;
+}
+
+@media (max-width: 700px) {
+  .alert-success {
+    bottom: 5em;
+    padding: 0.8em;
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -448,6 +514,42 @@ img {
 section {
   padding: 5em 0;
   margin: 1em auto;
+}
+
+@-webkit-keyframes alert {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0.8em;
+  }
+}
+
+@keyframes alert {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0.8em;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .navbar {
@@ -1313,6 +1415,12 @@ section {
   border-radius: 0.5em;
   -webkit-box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.096);
           box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.096);
+}
+
+#Contact .contact-container form .error {
+  margin: 0;
+  padding: 0;
+  color: red;
 }
 
 #Contact .contact-container form .fields {

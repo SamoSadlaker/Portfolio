@@ -40,7 +40,10 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main>
+
+    <!-- About section -->
     <section id="About">
       <div class="titles">
         <h3>About me</h3>
@@ -73,6 +76,7 @@
       </div>
     </section>
 
+    <!-- Services section -->
     <section id="Services">
       <div class="titles">
         <h3>Services</h3>
@@ -122,6 +126,7 @@
       </div>
     </section>
 
+    <!-- Skills section -->
     <section id="Skills">
       <div class="titles">
         <h3>Skills</h3>
@@ -180,6 +185,7 @@
       </div>
     </section>
 
+    <!-- Work section -->
     <section id="Work">
       <div class="titles">
         <h3>My work</h3>
@@ -191,6 +197,7 @@
       </div>
     </section>
 
+    <!-- Certificates section -->
     <section id="Certificates">
       <div class="titles">
         <h3>Certificates</h3>
@@ -218,6 +225,7 @@
     </section>
 
 
+    <!-- Contact section -->
     <section id="Contact">
       <div class="titles">
         <h3>Contact</h3>
@@ -225,6 +233,7 @@
       </div>
       <div class="contact-container">
           <form action="app/contact.php" id="contactform" method="POST">
+            <p class="error" id="error"></p>
             <div class="fields">
               <input type="text" name="name" id="name" required placeholder="Name">
 

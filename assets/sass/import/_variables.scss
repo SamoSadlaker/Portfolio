@@ -23,3 +23,9 @@ $box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25);
 $enable-shadow: true;
 
 $text-shadow: 2px 1.5px -1px rgba(0, 0, 0, 0.527);
+
+$alert-colors: (
+    "default": #545766,
+    "error": #fd685b,
+    "success": #28a745,
+);
