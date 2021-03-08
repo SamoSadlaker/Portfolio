@@ -1,5 +1,5 @@
 <?php
-require_once "./controllers/DataController.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/DataController.php";
 $data = new DataController();
 
 // if (!isset($_POST['dark'])) {

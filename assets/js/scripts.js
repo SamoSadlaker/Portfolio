@@ -22,8 +22,6 @@ $(document).ready(function () {
         }, 8000);
     }
 
-    popalert("default", "Info message");
-
     /* Formfix */
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
