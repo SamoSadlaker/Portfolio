@@ -803,6 +803,7 @@ section {
 .header .content h1 span {
   color: #008bf8;
   letter-spacing: 0.02em;
+  font-size: 0.8em;
 }
 
 .header .content p {
@@ -813,7 +814,7 @@ section {
 
 .header .content p span {
   color: #008bf8;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
 }
 
@@ -1401,7 +1402,7 @@ section {
   width: 40em;
   padding: 3em 1em;
   min-height: 27em;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1491,6 +1492,7 @@ section {
 
 #Contact .contact-container form button:hover {
   background-color: transparent;
+  color: #111;
 }
 
 @media (max-width: 700px) {

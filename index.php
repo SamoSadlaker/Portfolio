@@ -51,7 +51,7 @@
       </div>
       <div class="about-container">
         <div class="image">
-          <img src="assets/img/about.jpg" alt="">
+          <img src="assets/img/about.png" alt="">
         </div>
         <div class="content">
           <p>
@@ -255,8 +255,9 @@
   <!-- <a href="//www.dmca.com/Protection/Status.aspx?ID=d54945af-57dd-41c2-b786-7ca5b1085b1d" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-11.png?ID=d54945af-57dd-41c2-b786-7ca5b1085b1d"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> -->
                                 
 
+  <script src="assets/js/typed.min.js"></script>
   <?php require_once "./assets/include/footer.php" ?>
-  <script src="assets/js/type.js"></script>
+  
   
 </body>
 

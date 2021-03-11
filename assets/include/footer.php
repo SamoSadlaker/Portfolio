@@ -23,8 +23,6 @@
   <!-- Import Jquery -->
   <script src="assets/js/jquery-3.5.1.min.js"></script>
 
-  <!-- Import Typed library -->
-  <script src="assets/js/typed.min.js"></script>
 
   <!-- Import custom script -->
   <script src="assets/js/scripts.js"></script>

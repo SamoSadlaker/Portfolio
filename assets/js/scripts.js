@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     /* Functions */
 
@@ -23,7 +25,7 @@ $(document).ready(function () {
         }, 8000);
     }
 
-    popalert("error", "Test");
+    // popalert("error", "Test");
 
     /* Formfix */
     if (window.history.replaceState) {
