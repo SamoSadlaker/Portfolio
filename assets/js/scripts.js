@@ -13,7 +13,8 @@ $(document).ready(function () {
 
         var alert = `<div id="alert" class="alert-${type}"><i class='bx bxs-${icon}-circle'></i>${message}</div>`;
 
-        $("main").append(alert);
+        // $("main").append(alert);
+        document.body.innerHTML += alert;
 
         setTimeout(() => {
             $("#alert").fadeOut(400, function () {
@@ -21,6 +22,8 @@ $(document).ready(function () {
             });
         }, 8000);
     }
+
+    popalert("error", "Test");
 
     /* Formfix */
     if (window.history.replaceState) {
@@ -46,42 +49,78 @@ $(document).ready(function () {
     });
 
     /* Nav */
-    $(window).scroll(function () {
-        var offset = 1;
-        if ($(window).scrollTop() >= offset) {
-            $(".navbar").addClass("active");
+
+    window.onscroll = function () {
+        navtoggle();
+    };
+
+    function navtoggle() {
+        if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50
+        ) {
+            document.querySelector(".navbar").classList.add("active");
         } else {
-            $(".navbar").removeClass("active");
+            document.querySelector(".navbar").classList.remove("active");
         }
-    });
+    }
 
     var request;
-    var theme;
 
-    if ($("body").attr("data-theme") == "light") {
-        theme = "dark";
+    var theme;
+    function checkTheme() {
+        if (
+            document.querySelector("body").getAttribute("data-theme") == "light"
+        ) {
+            theme = "dark";
+        }
+
+        if (
+            document.querySelector("body").getAttribute("data-theme") == "dark"
+        ) {
+            theme = "light";
+        }
     }
-    if ($("body").attr("data-theme") == "dark") {
-        theme = "light";
-    }
+
+    checkTheme();
 
     /* Dark theme */
-    $("#theme").click(function () {
-        request = $.ajax({
-            url: "/app/dark.php",
-            type: "POST",
-            data: "theme=" + theme,
-        });
+    // $("#theme").click(function () {
+    //     request = $.ajax({
+    //         url: "/app/dark.php",
+    //         type: "POST",
+    //         data: "theme=" + theme,
+    //     });
 
-        request.done(function (response) {
-            $("body").attr("data-theme", response).css("transition", "0.6s");
-            if ($("body").attr("data-theme") == "light") {
-                theme = "dark";
+    //     request.done(function (response) {
+    //         $("body").attr("data-theme", response).css("transition", "0.6s");
+    //         if ($("body").attr("data-theme") == "light") {
+    //             theme = "dark";
+    //         }
+    //         if ($("body").attr("data-theme") == "dark") {
+    //             theme = "light";
+    //         }
+    //     });
+    // });
+
+    document.getElementById("theme").addEventListener("click", () => {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST", "/app/dark.php", true);
+        xmlhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        xmlhttp.setRequestHeader(
+            "Content-type",
+            "application/x-www-form-urlencoded"
+        );
+
+        xmlhttp.onreadystatechange = () => {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document
+                    .querySelector("body")
+                    .setAttribute("data-theme", xmlhttp.responseText);
+                checkTheme();
             }
-            if ($("body").attr("data-theme") == "dark") {
-                theme = "light";
-            }
-        });
+        };
+        xmlhttp.send("theme=" + theme);
     });
 
     /* Contact Form */
