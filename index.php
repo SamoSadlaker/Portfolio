@@ -193,6 +193,50 @@
       </div>
       <div class="work-container">
         <div class="card">
+          <img src="assets/img/batcore-final.png" alt="">
+          <div class="content">
+            <h5>Batcore</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sapiente delectus laborum, quibusdam libero eligendi. Itaque minus, dolorum magni neque reiciendis pariatur culpa nihil voluptatem. Mollitia minima repellendus porro deserunt!
+            </p>
+            <a href="#" class="link">Visit</a>
+            <a href="#" class="info"><i class='bx bxs-info-circle'></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/mmp-final.png" alt="">
+          <div class="content">
+            <h5>MMP</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sapiente delectus laborum, quibusdam libero eligendi. Itaque minus, dolorum magni neque reiciendis pariatur culpa nihil voluptatem. Mollitia minima repellendus porro deserunt!
+            </p>
+            <a href="#" class="link">Visit</a>
+            <a href="#" class="info"><i class='bx bxs-info-circle'></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/loklop-final.png" alt="">
+          <div class="content">
+            <h5>Loklop</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sapiente delectus laborum, quibusdam libero eligendi. Itaque minus, dolorum magni neque reiciendis pariatur culpa nihil voluptatem. Mollitia minima repellendus porro deserunt!
+            </p>
+            <a href="#" class="link">Visit</a>
+            <a href="#" class="info"><i class='bx bxs-info-circle'></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/forgamers-final.png" alt="">
+          <div class="content">
+            <h5>ForGamers</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sapiente delectus laborum, quibusdam libero eligendi. Itaque minus, dolorum magni neque reiciendis pariatur culpa nihil voluptatem. Mollitia minima repellendus porro deserunt!
+            </p>
+            <a href="#" class="link">Visit</a>
+            <a href="#" class="info"><i class='bx bxs-info-circle'></i></a>
+          </div>
+        </div>
+
           
       </div>
     </section>
