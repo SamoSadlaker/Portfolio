@@ -51,7 +51,7 @@ $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_STRING, FILTER_FL
 $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL, FILTER_FLAG_NO_ENCODE_QUOTES);
 $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
-// $contact->sendMail($name, $subject, $email, $message);
+$contact->sendMail($name, $subject, $email, $message);
 
 die(json_encode([
     "status" => "success",
