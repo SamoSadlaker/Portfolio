@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     /* Functions */
 
@@ -19,13 +17,9 @@ $(document).ready(function () {
         document.body.innerHTML += alert;
 
         setTimeout(() => {
-            $("#alert").fadeOut(400, function () {
-                $(this).remove();
-            });
+            document.getElementById("alert").remove();
         }, 8000);
     }
-
-    // popalert("error", "Test");
 
     /* Formfix */
     if (window.history.replaceState) {
@@ -67,8 +61,6 @@ $(document).ready(function () {
         }
     }
 
-    var request;
-
     var theme;
     function checkTheme() {
         if (
@@ -87,24 +79,6 @@ $(document).ready(function () {
     checkTheme();
 
     /* Dark theme */
-    // $("#theme").click(function () {
-    //     request = $.ajax({
-    //         url: "/app/dark.php",
-    //         type: "POST",
-    //         data: "theme=" + theme,
-    //     });
-
-    //     request.done(function (response) {
-    //         $("body").attr("data-theme", response).css("transition", "0.6s");
-    //         if ($("body").attr("data-theme") == "light") {
-    //             theme = "dark";
-    //         }
-    //         if ($("body").attr("data-theme") == "dark") {
-    //             theme = "light";
-    //         }
-    //     });
-    // });
-
     document.getElementById("theme").addEventListener("click", () => {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("POST", "/app/dark.php", true);
@@ -126,35 +100,42 @@ $(document).ready(function () {
     });
 
     /* Contact Form */
-    var form = $("#contactform");
-    var error = $("#error");
-    form.submit(function (e) {
+    var form = document.getElementById("contactform");
+    var error = document.getElementById("error");
+
+    form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        request = $.ajax({
-            url: form.attr("action"),
-            type: "POST",
-            data: form.serialize(),
-        });
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST", form.getAttribute("action"), true);
+        xmlhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
 
-        request.done(function (response) {
-            var res = JSON.parse(response);
+        var formdata = new FormData();
+        formdata.append("name", document.getElementById("name").value);
+        formdata.append("subject", document.getElementById("subject").value);
+        formdata.append("email", document.getElementById("email").value);
+        formdata.append("message", document.getElementById("message").value);
 
-            if (res.status == "validate") {
-                error.text("* " + res.message);
+        xmlhttp.onreadystatechange = () => {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var res = JSON.parse(xmlhttp.responseText);
+
+                console.log(res.status);
+                if (res.status == "validate") {
+                    error.textContent = "* " + res.message;
+                }
+                if (res.status == "error") {
+                    $("input[type=text], input[type=email], textarea ").val("");
+                    error.textContent = "";
+                    popalert("error", res.message);
+                }
+                if (res.status == "success") {
+                    $("input[type=text], input[type=email], textarea ").val("");
+                    error.textContent = "";
+                    popalert("success", res.message);
+                }
             }
-
-            if (res.status == "error") {
-                $("input[type=text], input[type=email], textarea ").val("");
-                error.text("");
-                popalert("error", res.message);
-            }
-
-            if (res.status == "success") {
-                $("input[type=text], input[type=email], textarea ").val("");
-                error.text("");
-                popalert("success", res.message);
-            }
-        });
+        };
+        xmlhttp.send(formdata);
     });
 });

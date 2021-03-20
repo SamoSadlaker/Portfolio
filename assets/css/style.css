@@ -1590,6 +1590,10 @@ section {
   color: #d8d8d8;
 }
 
+[data-theme="dark"] #Work .work-container .content p {
+  color: #d8d8d8;
+}
+
 [data-theme="dark"] #Contact .contact-container form input,
 [data-theme="dark"] #Contact .contact-container form textarea {
   color: #d8d8d8;

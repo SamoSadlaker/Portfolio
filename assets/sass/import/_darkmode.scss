@@ -16,6 +16,12 @@
         }
     }
 
+    #Work .work-container{
+        .content p{
+            color: darken($color-text-light, 10);
+        }
+    }
+
     #Contact .contact-container form {
         input,
         textarea {
