@@ -164,9 +164,9 @@
         <div class="bar">
           <p class="name">JS</p>
           <div class="percent">
-            <div class="progress" style="width: 40%;"></div>
+            <div class="progress" style="width: 55%;"></div>
           </div>
-          <span class="value">40%</span>
+          <span class="value">55%</span>
         </div>
         <div class="bar">
           <p class="name">git</p>
@@ -276,7 +276,7 @@
         <span>contact me</span>
       </div>
       <div class="contact-container">
-          <form action="app/contact.php" id="contactform" method="POST">
+          <form action="core/contact.php" id="contactform" method="POST">
             <p class="error" id="error"></p>
             <div class="fields">
               <input type="text" name="name" id="name" required placeholder="Name">

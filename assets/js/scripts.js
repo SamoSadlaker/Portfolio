@@ -49,6 +49,7 @@ $(document).ready(function () {
     window.onscroll = function () {
         navtoggle();
     };
+    navtoggle();
 
     function navtoggle() {
         if (
@@ -81,7 +82,7 @@ $(document).ready(function () {
     /* Dark theme */
     document.getElementById("theme").addEventListener("click", () => {
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("POST", "/app/dark.php", true);
+        xmlhttp.open("POST", "/core/dark.php", true);
         xmlhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         xmlhttp.setRequestHeader(
             "Content-type",
@@ -93,6 +94,9 @@ $(document).ready(function () {
                 document
                     .querySelector("body")
                     .setAttribute("data-theme", xmlhttp.responseText);
+
+                document.querySelector("body").style.transition = "all 0.5s";
+
                 checkTheme();
             }
         };
@@ -120,19 +124,21 @@ $(document).ready(function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 var res = JSON.parse(xmlhttp.responseText);
 
-                console.log(res.status);
-                if (res.status == "validate") {
-                    error.textContent = "* " + res.message;
-                }
-                if (res.status == "error") {
-                    $("input[type=text], input[type=email], textarea ").val("");
-                    error.textContent = "";
-                    popalert("error", res.message);
-                }
-                if (res.status == "success") {
-                    $("input[type=text], input[type=email], textarea ").val("");
-                    error.textContent = "";
-                    popalert("success", res.message);
+                switch (res.status) {
+                    case "validate":
+                        error.textContent = "* " + res.message;
+                        break;
+                    case "error":
+                        error.textContent = "";
+                        popalert("error", res.message);
+                        break;
+                    case "success":
+                        $("input[type=text], input[type=email], textarea ").val(
+                            ""
+                        );
+                        error.textContent = "";
+                        popalert("success", res.message);
+                        break;
                 }
             }
         };

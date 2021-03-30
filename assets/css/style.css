@@ -1201,7 +1201,7 @@ section {
 }
 
 #Work .work-container .card .content .info:hover {
-  font-size: 1.55em;
+  color: #00355f;
 }
 
 @media (max-width: 600px) {

@@ -1,4 +1,4 @@
-#Work .work-container{
+#Work .work-container {
     width: 100%;
     padding: 0 4em;
     display: flex;
@@ -7,19 +7,19 @@
     justify-content: center;
     margin-top: 2em;
 
-    .card{
+    .card {
         width: 28em;
         height: auto;
         margin: 1em;
         padding: 0.4em 0.4em;
-        img{
+        img {
             @include rounded(em(8));
             filter: drop-shadow(-3px 3px 4px rgba(0, 0, 0, 0.116));
         }
-        .content{
+        .content {
             padding: 0 0.3em;
 
-            h5{
+            h5 {
                 color: $color-primary;
                 margin: 0.3em 0;
                 font: {
@@ -27,34 +27,32 @@
                 }
             }
 
-            p{
+            p {
                 font-size: 0.95em;
                 text-align: justify;
             }
 
-            .link{
+            .link {
                 color: $color-text-light;
                 background-color: $color-primary;
                 padding: 0.4em 0.8em;
                 @include rounded(em(8));
                 transition: background-color $animation-speed;
-                &:hover{
+                &:hover {
                     background-color: darken($color-primary, 10);
                 }
             }
 
-            .info{
+            .info {
                 color: darken($color-primary, 20);
                 font-size: 1.5em;
                 vertical-align: middle;
                 margin-left: 0.8em;
-                &:hover{
-                    font-size: 1.55em;
+                &:hover {
+                    color: darken($color-primary, 30);
                 }
             }
-
         }
-        
     }
 }
 @media (max-width: 600px) {
