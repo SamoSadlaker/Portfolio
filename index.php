@@ -15,7 +15,7 @@
 
 </head>
 
-<body data-theme="<?= $theme ?>">
+<body id="Home" data-theme="<?= $theme ?>">
 
   <!-- Navbar -->
   <nav class="navbar">
@@ -32,7 +32,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="header" id="Home">
+  <header class="header" >
     <div class="content">
       <h1>Hello, my name is <span>SamoSadlaker</span></h1>
       <p>I'm <span id="me"></span></p>
