@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/DataController.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/ContactController.php";
+require_once realpath(dirname(__DIR__) . "/.") . "/app/controllers/DataController.php";
+require_once realpath(dirname(__DIR__) . "/.") . "/app/controllers/ContactController.php";
 $data = new DataController();
 $contact = new ContactController();
 

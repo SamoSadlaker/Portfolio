@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/DataController.php";
+require_once realpath(dirname(__DIR__) . "/.") . "/app/controllers/DataController.php";
 $data = new DataController();
 
 if (!$data->isAjax()) {

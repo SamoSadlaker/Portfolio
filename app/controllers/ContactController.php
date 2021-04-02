@@ -1,9 +1,9 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/phpmailer/PHPMailer.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/phpmailer/Exception.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/app/controllers/phpmailer/SMTP.php";
+    require_once realpath(dirname(__DIR__) . "/..") . "/app/controllers/phpmailer/PHPMailer.php";
+    require_once realpath(dirname(__DIR__) . "/..") . "/app/controllers/phpmailer/Exception.php";
+    require_once realpath(dirname(__DIR__) . "/..") . "/app/controllers/phpmailer/SMTP.php";
 
 class ContactController
 {
