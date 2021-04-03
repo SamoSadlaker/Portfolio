@@ -28,7 +28,6 @@ if (window.history.replaceState) {
 for (const link of document.querySelectorAll('a[href^="#"]')) {
     link.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log("yay");
         const element = link.getAttribute("href");
         scroll({
             top: document.querySelector(element).offsetTop,
@@ -130,3 +129,34 @@ form.addEventListener("submit", (e) => {
     };
     xmlhttp.send(formdata);
 });
+
+/* Throttle */
+const throttle = (func, limit) => {
+    let inThrottle;
+    return function () {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => (inThrottle = false), limit);
+        }
+    };
+};
+
+/* Contact Form */
+let aos = Array.from(document.querySelectorAll("[data-aos]"));
+window.addEventListener(
+    "scroll",
+    throttle(() => {
+        aos.forEach((element) => {
+            const elementDiv = element.getBoundingClientRect();
+            let distanceFromTop = -300;
+            if (elementDiv.top - window.innerHeight < distanceFromTop) {
+                element.classList.add("aos-active");
+            } else {
+                element.classList.remove("aos-active");
+            }
+        });
+    }, 200)
+);

@@ -409,6 +409,18 @@ template {
   }
 }
 
+[data-aos] {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.aos-active {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

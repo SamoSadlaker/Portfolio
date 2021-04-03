@@ -44,7 +44,7 @@
   <main>
 
     <!-- About section -->
-    <section id="About">
+    <section id="About" data-aos>
       <div class="titles">
         <h3>About me</h3>
         <span>who i am?</span>
@@ -77,7 +77,7 @@
     </section>
 
     <!-- Services section -->
-    <section id="Services">
+    <section id="Services" data-aos>
       <div class="titles">
         <h3>Services</h3>
         <span>my offers</span>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Skills section -->
-    <section id="Skills">
+    <section id="Skills" data-aos>
       <div class="titles">
         <h3>Skills</h3>
         <span>what i know</span>
@@ -186,7 +186,7 @@
     </section>
 
     <!-- Work section -->
-    <section id="Work">
+    <section id="Work" data-aos>
       <div class="titles">
         <h3>My work</h3>
         <span>completed projects</span>
@@ -242,7 +242,7 @@
     </section>
 
     <!-- Certificates section -->
-    <section id="Certificates">
+    <section id="Certificates" data-aos>
       <div class="titles">
         <h3>Certificates</h3>
         <span>completed courses</span>
@@ -270,7 +270,7 @@
 
 
     <!-- Contact section -->
-    <section id="Contact">
+    <section id="Contact" data-aos>
       <div class="titles">
         <h3>Contact</h3>
         <span>contact me</span>
